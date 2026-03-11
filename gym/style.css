@@ -1,0 +1,310 @@
+/* -------- RESET -------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= LOGIN PAGE ================= */
+
+body.login-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.login-page .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background: #ffffff;
+    max-width: 400px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+    animation: slideFade 0.9s ease;
+}
+
+.login-box h3 {
+    font-weight: bold;
+    color: #243b55;
+}
+
+.login-box .form-control {
+    height: 45px;
+    border-radius: 10px;
+}
+
+.btn-login {
+    height: 45px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: #fff;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.btn-login:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    color: #fff;
+}
+
+/* ================= DASHBOARD ================= */
+
+body.dashboard-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.dashboard-area {
+    margin-top: 80px;
+    animation: fadeUp 1s ease;
+}
+
+.dash-btn {
+    display: block;
+    padding: 25px;
+    border-radius: 15px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.4s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+.dash-btn h5 {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.dash-btn p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.dash-btn:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    color: #fff;
+}
+
+.btn-logout {
+    transition: 0.3s;
+}
+
+.btn-logout:hover {
+    transform: scale(1.1);
+}
+
+/* -------- ANIMATIONS -------- */
+@keyframes slideFade {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* ================= ADD TRAINER PAGE ================= */
+
+.trainer-card {
+    max-width: 420px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+    animation: slideFade 0.8s ease;
+}
+
+.trainer-card h3 {
+    color: #243b55;
+    font-weight: bold;
+}
+
+.trainer-card .form-control {
+    height: 45px;
+    border-radius: 10px;
+}
+
+.trainer-card button {
+    height: 45px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* ================= ADD MEMBER PAGE ================= */
+
+.member-card {
+    max-width: 450px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.35);
+    animation: slideFade 0.9s ease;
+}
+
+/* Heading */
+.member-card h3 {
+    color: #243b55;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+.member-card .form-control {
+    height: 45px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+/* Button */
+.member-card button {
+    height: 45px;
+    border-radius: 10px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #0d6efd, #084298);
+    border: none;
+    transition: 0.4s;
+    color: #fff;
+}
+
+/* Button Hover */
+.member-card button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+
+/* ================= VIEW MEMBERS PAGE ================= */
+
+.view-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.35);
+    animation: fadeUp 0.9s ease;
+}
+
+.view-card h3 {
+    color: #243b55;
+    font-weight: bold;
+}
+
+/* Table Styling */
+.member-table {
+    animation: slideFade 1s ease;
+}
+
+.member-table thead {
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: #fff;
+}
+
+.member-table th,
+.member-table td {
+    padding: 14px;
+    vertical-align: middle;
+}
+
+/* Row hover animation */
+.member-table tbody tr {
+    transition: 0.3s;
+}
+
+.member-table tbody tr:hover {
+    background-color: #f1f5ff;
+    transform: scale(1.01);
+}
+/* Action Buttons */
+.member-table .btn {
+    transition: 0.3s;
+}
+
+.member-table .btn:hover {
+    transform: scale(1.08);
+}
+
+/* ================= PAYMENT PAGE ================= */
+
+.payment-card {
+    max-width: 420px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.35);
+    animation: slideFade 0.9s ease;
+}
+
+.payment-card h3 {
+    color: #243b55;
+    font-weight: bold;
+}
+
+.payment-card .form-control {
+    height: 45px;
+    border-radius: 10px;
+}
+
+.payment-card button {
+    height: 45px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.payment-card button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+
+.profile-card{
+    width: 380px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.forgot-link{
+    font-size: 14px;
+    text-decoration: none;
+    color: #0d6efd;
+}
+
+.forgot-link:hover{
+    text-decoration: underline;
+    color: #084298;
+}
+
+/*<!-- for Better Mobile Look -->*/
+
+.dash-btn {
+    display:block;
+    padding:25px;
+    text-align:center;
+    border-radius:12px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.dash-btn:hover{
+    transform:scale(1.05);
+}
